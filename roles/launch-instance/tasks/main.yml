@@ -1,6 +1,7 @@
 ---
 - name: Launch instance
   amazon.aws.ec2_instance:
+# setting this if you are running from cli "ansible-navigator"  
 #    aws_access_key: "{{ aws_access_key }}"
 #    aws_secret_key: "{{ aws_secret_key }}"
     name: "{{ aws_instance_name }}"
@@ -13,9 +14,9 @@
     network:
       assign_public_ip: yes
     tags:
+      Environment: Testing
       Contact: raul@redhat.com
       DeleteBy: Never
       AlwaysUp: False
-#      Name: "{{ aws_instance_id }}"
-    count: 1
-    wait: no
+  register: result 
+  
