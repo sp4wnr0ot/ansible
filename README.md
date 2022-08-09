@@ -2,9 +2,10 @@
 
 Basic launch ec2 instance demo by AAP.
 - Setup your Amazon Credentials
-- Point your Project trough repository
+- Point your Project trough this github repository
 - Sync
 - Create a template
+- Execute ;-)
 
 If you want to run from cli "ansible-navigator" here is a template as example
 
