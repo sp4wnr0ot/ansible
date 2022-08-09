@@ -1,6 +1,8 @@
 ---
 - name: Launch instance
   amazon.aws.ec2_instance:
+#    aws_access_key: "{{ aws_access_key }}"
+#    aws_secret_key: "{{ aws_secret_key }}"
     name: "{{ aws_instance_name }}"
     region: "{{ aws_region }}"
     instance_type: "{{ aws_instance_type }}"
