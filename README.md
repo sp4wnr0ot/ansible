@@ -3,11 +3,11 @@
 Here you will find some basic tasks to do at Amazon AWS with Ansible
 Such as launch ; start ; stop AWS instances
 
-*(1) launch-ec2-instance.yml*
+**(1) launch-ec2-instance.yml**
 
-*(2) start-ec2-instance.yml*
+**(2) start-ec2-instance.yml**
 
-*(3) stop-ec2-instance.yml*
+**(3) stop-ec2-instance.yml**
 
 Once you have mapped those playbooks under the AAP Control WEBUI the old "tower", you need to add 
 the job templates with the surveys variables regarding the following tasks:
