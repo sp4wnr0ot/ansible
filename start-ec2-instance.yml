@@ -1,0 +1,6 @@
+---
+- name: Start Instance on AWS
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - role: start-ec2-instance

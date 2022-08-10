@@ -1,0 +1,6 @@
+---
+- name: Stop Instance on AWS
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - role: stop-ec2-instance
