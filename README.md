@@ -64,7 +64,7 @@ If you want to run from cli "ansible-navigator" here is a template as example
       register: result  
 ```
 
-ansible-navigator run <your-playbook-here>.yml -m stdout
+$ ansible-navigator run your-playbook-here.yml -m stdout
 
 
 
