@@ -3,7 +3,7 @@
   amazon.aws.ec2_instance:
     name: "{{ aws_instance_name }}"
     region: "{{ aws_region }}"
-    instance_ids: '{{ instance_ids }}'
+#    instance_ids: '{{ instance_ids }}'
     state: started
     wait: True
     vpc_subnet_id: "{{ aws_subnet }}"
