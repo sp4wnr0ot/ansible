@@ -1,6 +1,6 @@
 # Ansible AAP 2.x WEBUI
 
-Basic launch ec2 instance demo by AAP.
+Basic way to launch ec2 instances / Demo purpose of -> AAP.
 - Setup your Amazon Credentials
 - Point your Project trough this github repository
 - Sync
