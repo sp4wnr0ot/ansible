@@ -35,7 +35,6 @@ the job templates with the surveys variables regarding the following tasks:
     vpc_subnet_id: "{{ aws_subnet }}"
 ```
 
-*
 
 Below there is test to execute the launch-ec2-isntance.yml with "ansible-navigator" by CLI.
 If you want to run from cli "ansible-navigator" here is a template as example
