@@ -1,7 +1,7 @@
 ---
 - name: Stop instance
   amazon.aws.ec2_instance:
-    name: "{{ aws_instance_name }}"
+#   name: "{{ aws_instance_name }}"
     region: "{{ aws_region }}"
     instance_ids: '{{ instance_ids }}'
     state: stopped
