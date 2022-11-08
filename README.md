@@ -1,16 +1,18 @@
-# Ansbile Automation Platform Demo Purpose AAP 2.x w/ Amazon AWS
+# Ansbile Automation Platform Demo Purpose AAP 2.x for Amazon AWS
 
 Here you will find some basic tasks to do at Amazon AWS with Ansible
 Such as launch ; start ; stop AWS instances
 
+=================================
 **(1) launch-ec2-instance.yml**
-
+=================================
 **(2) start-ec2-instance.yml**
-
+=================================
 **(3) stop-ec2-instance.yml**
+=================================
 
 Once you have mapped those playbooks under the AAP Control WEBUI the old "tower", you need to add 
-the job templates with the surveys variables regarding the following tasks:
+the 'job templates', also the 'surveys' variables regarding the variables:
 
 - launch-instance - tasks - main.yml
 ```
@@ -36,15 +38,8 @@ the job templates with the surveys variables regarding the following tasks:
 ```
 
 Below there is a test to execute the launch-ec2-isntance.yml with "ansible-navigator" by CLI.
-If you want to run from cli "ansible-navigator" here is a template as example.
-Don't forget to set up your key's.
-
-```
-aws_access_key:
-aws_secret_key:
-```
-
-
+If you want to run from cli by "ansible-navigator" here is a template as an example.
+Don't forget to set up your aws key's.
 
 ```
 - hosts: localhost
@@ -70,7 +65,7 @@ aws_secret_key:
           DeleteBy: Never
       register: result  
 ```
-
+^
 $ ansible-navigator run your-playbook-here.yml -m stdout
 
 
