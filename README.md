@@ -30,11 +30,11 @@ the 'job templates', also the 'surveys' variables regarding the variables:
     vpc_subnet_id: "{{ aws_subnet }}"
 ```
 - start-ec2-instance - tasks - main.yml
-```bashbash
+```bash
     region: "{{ aws_region }}"
     instance_ids: '{{ instance_ids }}'
     vpc_subnet_id: "{{ aws_subnet }}"
-```bash
+```
 - stop-ec2-instance - tasks - main.yml
 ```bash
     region: "{{ aws_region }}"
