@@ -1,5 +1,11 @@
 # Ansbile Automation Platform Demo Purpose AAP 2.x for Amazon AWS
 
+
+[![Documentation](https://readthedocs.org/projects/ansible-runner/badge/?version=stable)](https://ansible-runner.readthedocs.io/en/latest/)
+[![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Ansible-silver.svg)](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html)
+
+
+
 Here you will find some basic tasks to do at Amazon AWS with Ansible
 Such as launch ; start ; stop AWS instances
 
