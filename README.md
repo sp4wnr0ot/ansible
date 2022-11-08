@@ -5,23 +5,22 @@
 [![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Ansible-silver.svg)](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html)
 
 
-
 Here you will find some basic tasks to do at Amazon AWS with Ansible
 Such as launch ; start ; stop AWS instances
 
-=================================
-**(1) launch-ec2-instance.yml**
-=================================
-**(2) start-ec2-instance.yml**
-=================================
-**(3) stop-ec2-instance.yml**
-=================================
+
+1). launch-ec2-instance.yml
+
+2). start-ec2-instance.yml
+
+3).  stop-ec2-instance.yml
+
 
 Once you have mapped those playbooks under the AAP Control WEBUI the old "tower", you need to add 
 the 'job templates', also the 'surveys' variables regarding the variables:
 
 - launch-instance - tasks - main.yml
-```
+```bash
     name: "{{ aws_instance_name }}"
     region: "{{ aws_region }}"
     instance_type: "{{ aws_instance_type }}"
@@ -31,13 +30,13 @@ the 'job templates', also the 'surveys' variables regarding the variables:
     vpc_subnet_id: "{{ aws_subnet }}"
 ```
 - start-ec2-instance - tasks - main.yml
-```
+```bashbash
     region: "{{ aws_region }}"
     instance_ids: '{{ instance_ids }}'
     vpc_subnet_id: "{{ aws_subnet }}"
-```
+```bash
 - stop-ec2-instance - tasks - main.yml
-```
+```bash
     region: "{{ aws_region }}"
     instance_ids: '{{ instance_ids }}'
     vpc_subnet_id: "{{ aws_subnet }}"
@@ -47,7 +46,7 @@ Below there is a test to execute the launch-ec2-isntance.yml with "ansible-navig
 If you want to run from cli by "ansible-navigator" here is a template as an example.
 Don't forget to set up your aws key's.
 
-```
+```bash
 - hosts: localhost
   #  connection: local
   gather_facts: False
@@ -71,9 +70,7 @@ Don't forget to set up your aws key's.
           DeleteBy: Never
       register: result  
 ```
-^
+
+
+```bash
 $ ansible-navigator run your-playbook-here.yml -m stdout
-
-
-
-
